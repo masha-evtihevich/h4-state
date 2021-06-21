@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Solution 1
-class Checkbox extends React.Component {
+class Checkbox1 extends React.Component {
     state = {
         button: 'x'
     }
@@ -19,20 +19,20 @@ class Checkbox extends React.Component {
 
 
 // Solution 2
-class Checkbox extends React.Component {
+class Checkbox2 extends React.Component {
     state = {
         button: true
     }
 
     changeButton = () => {
-        const nextButton = this.state.button === true ? false : true
+        const nextButton = this.state.button ? false : true
         this.setState({ button: nextButton })
     }
     render() {
         return (
-            <button onClick={this.changeButton}>{this.state.button === true ? 'x' : 'y'}</button>
+            <button onClick={this.changeButton}>{this.state.button ? 'x' : 'y'}</button>
         )
     }
 }
 
-export default Checkbox;
+export {Checkbox1, Checkbox2};
