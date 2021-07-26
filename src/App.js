@@ -1,5 +1,5 @@
 import React from 'react';
-
+// Счетчик
 class App extends React.Component {
 
   state = {
