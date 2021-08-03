@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import {Checkbox1, Checkbox2} from './Checkbox';
 import TextItalic from './TextItalic';
-import Buttons from './Buttons';
+import Buttons, {Button} from './Buttons';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,6 +14,7 @@ ReactDOM.render(
     <Checkbox2 />
     <TextItalic />
     <Buttons />
+    <Button />
   </React.StrictMode>,
   document.getElementById('root')
 );
